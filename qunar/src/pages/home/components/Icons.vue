@@ -1,6 +1,6 @@
 <template>
   <div class="icons border-bottom">
-    <swiper>
+    <swiper :options="swiperOption">
       <swiper-slide v-for="(list, index) of swiperList" :key="index">
         <div class="icon" v-for="(item) of list" :key="item.id">
           <div class='icon-img'>
@@ -19,60 +19,14 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    iconList: Array
+  },
   data () {
     return {
-      iconList: [
-        {
-          id: 1,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-          desc: '景点门票'
-        },
-        {
-          id: 2,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png',
-          desc: '故宫'
-        },
-        {
-          id: 3,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-          desc: '北京必游'
-        },
-        {
-          id: 4,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/3e/86314b2af03b7502.png',
-          desc: '水上乐园'
-        },
-        {
-          id: 5,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
-          desc: '一日游'
-        },
-        {
-          id: 6,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/67/9a1678221b8e0e02.png',
-          desc: '古北水镇'
-        },
-        {
-          id: 7,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-          desc: '动植物园'
-        },
-        {
-          id: 8,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png',
-          desc: '奥林匹克塔'
-        },
-        {
-          id: 9,
-          imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png',
-          desc: '北京世园会'
-        },
-        {
-          id: 10,
-          imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20197/bf88c62458044ca2ef9d733690eef3fc.png',
-          desc: '优惠券'
-        }
-      ]
+      swiperOption:{
+        autoPlay: 0
+      }
     }
   },
   computed: {

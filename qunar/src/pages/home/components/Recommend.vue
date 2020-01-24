@@ -2,7 +2,7 @@
   <div>
     <div class="title">热门推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of itemData" :key="item.id">
+      <li class="item border-bottom" v-for="item of listData" :key="item.id">
         <img class="item-img" :src="item.imgUlr" alt="pic">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,28 +17,11 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props:{
+    listData: Array
+  },
   data () {
     return {
-      itemData: [
-        {
-          id: 1,
-          imgUlr: 'http://img1.qunarzz.com/sight/p0/1804/1a/1a48cc20b0d6ed44a3.img.jpg_200x200_32e22bed.jpg',
-          title: '奥林匹克塔',
-          desc: '敢与森林之王近距离接触吗？'
-        },
-        {
-          id: 2,
-          imgUlr: 'http://img1.qunarzz.com/sight/p0/1804/1a/1a48cc20b0d6ed44a3.img.jpg_200x200_32e22bed.jpg',
-          title: '奥林匹克塔',
-          desc: '敢与森林之王近距离接触吗？'
-        },
-        {
-          id: 3,
-          imgUlr: 'http://img1.qunarzz.com/sight/p0/1804/1a/1a48cc20b0d6ed44a3.img.jpg_200x200_32e22bed.jpg',
-          title: '奥林匹克塔',
-          desc: '敢与森林之王近距离接触吗？'
-        }
-      ]
     }
   }
 }

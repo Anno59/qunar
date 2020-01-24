@@ -1,0 +1,89 @@
+{
+  "itemData": "北京",
+  "list": [
+    {
+      "id": "1",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20198/279640fb8c1f7eea398045bfe8ac92b1.png_750x200_ac53465f.png"
+    },
+    {
+      "id": "3",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20198/279640fb8c1f7eea398045bfe8ac92b1.png_750x200_ac53465f.png"
+    },
+    {
+      "id": "2",
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20199/4e3f5a83099e6571ce4cad8609236121.jpg_750x200_48199ef2.jpg"
+    }
+  ],
+  "iconList": [
+    {
+      "id": 1,
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+      "desc": "景点门票"
+    },
+    {
+      "id": 2,
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png",
+      "desc": "故宫"
+    },
+    {
+      "id": 3,
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+      "desc": "北京必游"
+    },
+    {
+      "id": 4,
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/3e/86314b2af03b7502.png",
+      "desc": "水上乐园"
+    },
+    {
+      "id": 5,
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+      "desc": "一日游"
+    },
+    {
+      "id": 6,
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/67/9a1678221b8e0e02.png",
+      "desc": "古北水镇"
+    },
+    {
+      "id": 7,
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+      "desc": "动植物园"
+    },
+    {
+      "id": 8,
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png",
+      "desc": "奥林匹克塔"
+    },
+    {
+      "id": 9,
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png",
+      "desc": "北京世园会"
+    },
+    {
+      "id": 10,
+      "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20197/bf88c62458044ca2ef9d733690eef3fc.png",
+      "desc": "优惠券"
+    }
+  ],
+  "listData": [
+    {
+      "id": 1,
+      "imgUlr": "http://img1.qunarzz.com/sight/p0/1804/1a/1a48cc20b0d6ed44a3.img.jpg_200x200_32e22bed.jpg",
+      "title": "奥林匹克塔",
+      "desc": "敢与森林之王近距离接触吗？"
+    },
+    {
+      "id": 2,
+      "imgUlr": "http://img1.qunarzz.com/sight/p0/1804/1a/1a48cc20b0d6ed44a3.img.jpg_200x200_32e22bed.jpg",
+      "title": "奥林匹克塔",
+      "desc": "敢与森林之王近距离接触吗？"
+    },
+    {
+      "id": 3,
+      "imgUlr": "http://img1.qunarzz.com/sight/p0/1804/1a/1a48cc20b0d6ed44a3.img.jpg_200x200_32e22bed.jpg",
+      "title": "奥林匹克塔",
+      "desc": "敢与森林之王近距离接触吗？"
+    }
+  ]
+}
