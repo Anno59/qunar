@@ -27,7 +27,8 @@
 			"name": "桂林"
 		}],
 		"cities": {
-			"A": [{
+			"A": [
+				{
 				"id": 56,
 				"spell": "aba",
 				"name": "阿坝"
@@ -100,7 +101,8 @@
 				"spell": "anyuan",
 				"name": "安远"
 			}],
-			"B": [{
+			"B": [
+				{
 				"id": 1,
 				"spell": "beijing",
 				"name": "北京"
