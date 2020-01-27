@@ -9,6 +9,11 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state,
   actions,
-  mutations
+  mutations,
+  getters: {
+    doubleCity (state) {
+      return state.city
+    }
+  }
 })
 

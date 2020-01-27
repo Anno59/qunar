@@ -1,5 +1,5 @@
 let state = {
-  city: ''
+  city: '北京'
 };
 try {
   state.city = localStorage.city || state.city;
