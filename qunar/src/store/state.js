@@ -3,8 +3,6 @@ let state = {
 };
 try {
   state.city = localStorage.city || state.city;
-}catch (e) {
-
-}
+}catch (e) {}
 
 export default state;
