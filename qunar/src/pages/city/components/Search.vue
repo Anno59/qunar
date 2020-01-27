@@ -1,11 +1,14 @@
 <template>
 	<div>
 		<div class="search">
-			<input v-model="keywords" class="search-input" type="text" placeholder="输入城市名或拼音" />
+			<input v-model="keywords" class="search-input" type="text" placeholder="输入城市名或拼音"
+
+			/>
 		</div>
 		<div
 				class="search-content"
 				ref="search"
+				v-show="false"
 		>
 			<ul>
 				<li
