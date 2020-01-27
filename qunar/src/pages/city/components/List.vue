@@ -46,6 +46,7 @@
 
 <script>
 import Bscroll from 'better-scroll'
+import { mapMutations, mapActions } from 'Vuex'
 
 export default {
 	name: 'CityList',
@@ -64,10 +65,16 @@ export default {
   },
 	methods: {
     handleCityClick(city){
-      this.$store.dispatch('changeCity', city);
+      // this.$store.dispatch('changeCity', city);
+      this.changeCity(city);
+      // this.changeCity(city);
+
+			localStorage.city = city;
 
       this.$router.push('/')
-		}
+		},
+		...mapActions(['changeCity'])
+		// ...mapMutations(['changeCity'])
 	},
 	mounted() {
 		this.scroll = new Bscroll(this.$refs.wrapper);
