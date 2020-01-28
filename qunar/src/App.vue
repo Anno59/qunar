@@ -1,7 +1,7 @@
 <template>
   <div>
 <!--    <img src="./assets/logo.png">-->
-    <keep-alive>
+    <keep-alive :exclude="['Home']">
       <router-view/>
     </keep-alive>
   </div>

@@ -4,14 +4,17 @@
 			<img class="banner-img" :src="bannerImg"/>
 			<div class="banner-info">
 				<div class="banner-tittle">
+					{{sightName}}
 				</div>
 				<div class="banner-number">
 					<span class="iconfont banner-icon">&#xe692;</span>
 				</div>
 			</div>
 		</div>
-			<common-gallary v-show="showGallary"
+			<common-gallary
+				v-show="showGallary"
 				@click="handleGallaryClick"
+				:gallaryImgs="gallaryImgs"
 			></common-gallary>
 	</div>
 </template>
@@ -22,6 +25,8 @@
     name: 'DetailBanner',
 		props: {
       bannerImg: String,
+      sightName: String,
+      gallaryImgs: Array,
 		},
 		data() {
       return {

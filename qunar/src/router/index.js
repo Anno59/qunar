@@ -23,5 +23,11 @@ export default new Router({
       name: 'City',
       component: City
     }
-  ]
+  ],
+  scrollBehavior() {
+    return {
+      x: 0,
+      y: 0
+    }
+  }
 })

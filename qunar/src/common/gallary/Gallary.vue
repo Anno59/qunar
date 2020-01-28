@@ -3,7 +3,7 @@
     <div class="wrapper">
       <swiper :options="swiperOptions">
         <swiper-slide
-            v-for="item in img"
+            v-for="item in gallaryImgs"
             :key="item"
         >
           <img class="gallary-img" :src="item"/>
@@ -18,13 +18,10 @@
 export default {
   name: 'CommonGallary',
   props: {
-    img: {
+    gallaryImgs: {
       type: Array,
       default() {
-        return [
-          'http://img1.qunarzz.com/sight/p0/201301/16/aecd792aa219fd0793835fbb.jpg_r_800x800_60d30b3f.jpg',
-          'http://img1.qunarzz.com/sight/p0/1607/44/440a658fe76aa967a3.water.jpg_r_800x800_cdadb793.jpg'
-        ]
+        return []
       }
     }
   },

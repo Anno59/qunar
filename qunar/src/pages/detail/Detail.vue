@@ -1,12 +1,14 @@
 <template>
 	<div>
 		<detail-banner
-				:bannerImg="bannerImg"></detail-banner>
+			:bannerImg="bannerImg"
+			:sightName="sightName"
+			:gallaryImgs="gallaryImgs"
+		></detail-banner>
 		<detail-header></detail-header>
 		<div class="content">
 			<detail-list :categoryList="list"></detail-list>
 		</div>
-		<div class="content"></div>
 	</div>
 </template>
 
@@ -26,19 +28,29 @@ export default {
 	data(){
 		return {
 		  list: [],
-			bannerImg: 'http://img1.qunarzz.com/sight/p0/201301/16/aecd792aa219fd0793835fbb.jpg_600x330_8a61adc9.jpg'
+      sightName: '',
+			bannerImg: '',
+      gallaryImgs: [],
+      categoryList: [],
 		}
 	},
 	methods: {
 		async getDetailInfo() {
-		  const detail = await axios.get('/api/detail.json');
+		  const detail = await axios.get('/api/detail.json', {
+		    params :{
+		      id: this.$route.params.id
+				}
+			});
 		  const resData = detail.data;
 		  if(resData && resData.ret){
 		    this.list = resData.data.categoryList
+		    this.gallaryImgs = resData.data.gallaryImgs
+		    this.bannerImg = resData.data.bannerImg
+		    this.sightName = resData.data.sightName
 			}
 		}
 	},
-	mounted() {
+	activated() {
 	  this.getDetailInfo ()
 	}
 }
