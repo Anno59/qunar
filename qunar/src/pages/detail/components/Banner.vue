@@ -11,16 +11,19 @@
 				</div>
 			</div>
 		</div>
+		<transition-fade>
 			<common-gallary
 				v-show="showGallary"
 				@click="handleGallaryClick"
 				:gallaryImgs="gallaryImgs"
 			></common-gallary>
+		</transition-fade>
 	</div>
 </template>
 
 <script>
 	import CommonGallary from 'gallary/Gallary'
+	import TransitionFade from 'fade/fade'
   export default {
     name: 'DetailBanner',
 		props: {
@@ -34,7 +37,8 @@
       }
 		},
 		components: {
-      CommonGallary
+      CommonGallary,
+      TransitionFade
 		},
 		methods: {
       handleBannerClick() {
